@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Container } from '@/components/ui/container'
-import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react'
+import { Phone, Mail, MapPin, Instagram } from 'lucide-react'
 import { PLACEHOLDERS } from '@/lib/constants'
 import Image from 'next/image'
 
@@ -29,8 +29,8 @@ export function Footer() {
                             Reliable, high-quality workmanship for all your roofing needs.
                         </p>
                         <div className="flex space-x-4 pt-2">
-                            <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="Facebook">
-                                <Facebook className="h-5 w-5" />
+                            <a href="#" className="hover:opacity-80 transition-opacity" aria-label="Facebook">
+                                <Image src="/images/facebook-logo.png" alt="Facebook" width={24} height={24} className="rounded-full" />
                             </a>
                             <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="Instagram">
                                 <Instagram className="h-5 w-5" />

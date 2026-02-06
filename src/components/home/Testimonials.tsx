@@ -67,7 +67,10 @@ export default function Testimonials() {
                                     <h4 className="font-bold text-slate-900 text-sm">{item.author}</h4>
                                     <span className="text-xs text-slate-500">{item.role}</span>
                                 </div>
-                                <div className="ml-auto text-xs font-semibold text-blue-500 bg-blue-50 px-2 py-1 rounded">
+                                <div className="ml-auto flex items-center gap-1.5 text-xs font-semibold text-blue-500 bg-blue-50 px-2 py-1 rounded">
+                                    {item.source === "Facebook" && (
+                                        <Image src="/images/facebook-logo.png" alt="Facebook" width={16} height={16} className="rounded-full" />
+                                    )}
                                     {item.source}
                                 </div>
                             </div>
