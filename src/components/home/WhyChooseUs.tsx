@@ -2,6 +2,7 @@
 
 import { Container } from '@/components/ui/container'
 import { CheckCircle, Shield, Clock, Users, Trophy, ThumbsUp } from 'lucide-react'
+import Image from 'next/image'
 
 const features = [
     {
@@ -90,7 +91,13 @@ export default function WhyChooseUs() {
                     <div className="lg:w-1/2 relative">
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-900 aspect-[4/5] lg:aspect-square">
                             {/* We can use a pattern or just a really nice gradient card if no image */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-primary to-slate-900 p-12 flex flex-col justify-between">
+                            <Image
+                                src="/images/google-review-bg.png"
+                                alt="Google Reviews background"
+                                fill
+                                className="object-cover"
+                            />
+                            <div className="absolute inset-0 bg-black/40 p-12 flex flex-col justify-between">
                                 <Shield className="w-20 h-20 text-white/20" />
 
                                 <blockquote className="space-y-6">
