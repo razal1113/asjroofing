@@ -105,7 +105,7 @@ export function Header() {
                                 href="/contact"
                                 className="hidden md:inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg h-10 px-6 transition-colors"
                             >
-                                Get a Quote
+                                Get Started
                             </Link>
 
                             <button
@@ -170,7 +170,7 @@ export function Header() {
                                     href="/contact"
                                     className="hidden md:inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl h-12 px-8 text-base transition-colors"
                                 >
-                                    Get a Quote
+                                    Get Started
                                 </Link>
 
                                 <button
@@ -229,7 +229,7 @@ export function Header() {
                         onClick={() => setIsOpen(false)}
                         className="w-full flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors bg-primary text-primary-foreground hover:bg-primary/90 h-12 text-lg"
                     >
-                        Get a Quote
+                        Get Started
                     </Link>
                 </div>
             </div>
