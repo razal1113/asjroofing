@@ -1,4 +1,3 @@
-import { PLACEHOLDERS } from './constants';
 import { Home, Hammer, Building, TriangleAlert, Shield, CheckCircle, Clock, BadgeCheck } from 'lucide-react';
 
 export interface Service {
@@ -30,7 +29,7 @@ export const services: Service[] = [
             '20-year structural guarantee',
             'Building regulations compliant'
         ],
-        image: PLACEHOLDERS.SERVICE_NEW_ROOF,
+        image: '/images/new-roof-installations.png',
         icon: Home,
         benefits: [
             { title: 'Property Value', description: 'A new roof significantly increases the market value and curb appeal of your property.' },
@@ -51,7 +50,7 @@ export const services: Service[] = [
             'Lead flashing restoration',
             'Gutter cleaning and realignment'
         ],
-        image: PLACEHOLDERS.SERVICE_REPAIR,
+        image: '/images/roof-repairs.jpg',
         icon: Hammer,
         benefits: [
             { title: 'Prevent Further Damage', description: 'Fixing minor issues now saves you from expensive structural repairs later.' },
@@ -72,7 +71,7 @@ export const services: Service[] = [
             'Seamless waterproof finish',
             'Ideal for balconies and terraces'
         ],
-        image: PLACEHOLDERS.SERVICE_FLAT_ROOF,
+        image: '/images/roof-maintenance.jpg',
         icon: Building,
         benefits: [
             { title: 'Durability', description: 'Modern flat roof systems are incredibly tough and resistant to foot traffic.' },
@@ -93,7 +92,7 @@ export const services: Service[] = [
             'Safety assessment and reporting',
             'Immediate waterproofing'
         ],
-        image: PLACEHOLDERS.SERVICE_EMERGENCY,
+        image: '/images/emergency-services.jpg',
         icon: TriangleAlert,
         benefits: [
             { title: 'Immediate Protection', description: 'We stop water ingress immediately to protect your home’s interior.' },

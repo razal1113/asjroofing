@@ -1,9 +1,7 @@
 "use client"
 
-import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/ui/container'
-import { ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { services } from '@/lib/service-data'
 
@@ -53,13 +51,7 @@ export default function ServicesSection() {
                                     {service.shortDescription}
                                 </p>
 
-                                <Link
-                                    href={`/services/${service.slug}`}
-                                    className="inline-flex items-center text-sm font-semibold text-primary hover:text-blue-700 transition-colors pt-2"
-                                >
-                                    Learn More
-                                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-                                </Link>
+
                             </div>
                         </motion.div>
                     ))}
