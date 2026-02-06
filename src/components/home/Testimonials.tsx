@@ -10,7 +10,7 @@ const testimonials = [
         author: "Lorna Paradise",
         role: "Homeowner, Bath",
         content: "Recommended by Lorna Paradise - one happy customer.",
-        avatar: PLACEHOLDERS.AVATAR_DEFAULT,
+        avatar: "/images/facebook-logo.png",
         rating: 5,
         source: "Facebook"
     },
