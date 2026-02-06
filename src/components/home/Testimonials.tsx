@@ -18,7 +18,7 @@ const testimonials = [
         author: "James Wilson",
         role: "Property Owner, Frome",
         content: "Excellent service from start to finish. The team was professional, tidy, and the new roof looks fantastic.",
-        avatar: PLACEHOLDERS.AVATAR_DEFAULT,
+        avatar: "/images/google-logo.png",
         rating: 5,
         source: "Google"
     },
@@ -26,7 +26,7 @@ const testimonials = [
         author: "Sarah Jenkins",
         role: "Homeowner, Shepton Mallet",
         content: "Had a bad leak during the storms. ASJ Roofing came out quickly and fixed it properly. Highly recommended.",
-        avatar: PLACEHOLDERS.AVATAR_DEFAULT,
+        avatar: "/images/google-logo.png",
         rating: 5,
         source: "Google"
     }
