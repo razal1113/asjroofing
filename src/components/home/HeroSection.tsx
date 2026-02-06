@@ -1,7 +1,6 @@
 "use client"
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { PLACEHOLDERS } from '@/lib/constants'
 import { Container } from '@/components/ui/container'
 import { Button } from '@/components/ui/button'
@@ -61,19 +60,19 @@ export default function HeroSection() {
                         </p>
 
                             <div className="flex flex-col sm:flex-row items-center gap-4">
-                                <Link href="/contact" className="w-full sm:w-auto">
+                                <a href="#services" className="w-full sm:w-auto">
                                     <button className="inline-flex items-center gap-3 bg-black text-white text-base font-medium pl-7 pr-2 py-2 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
                                         Get Started Now
                                         <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#2F6DF6]">
                                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                                         </span>
                                     </button>
-                                </Link>
-                            <Link href="/projects" className="w-full sm:w-auto">
+                                </a>
+                            <a href="#projects" className="w-full sm:w-auto">
                                 <Button variant="outline" size="lg" className="w-full sm:w-auto text-base px-8 h-14 rounded-full border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm">
                                     View Our Work
                                 </Button>
-                            </Link>
+                            </a>
                         </div>
 
                         {/* Social Proof */}
