@@ -62,7 +62,7 @@ export function Header() {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-8">
+                    <div className="hidden md:flex items-center gap-10">
                         {navigation.map((item) => (
                             <div key={item.name} className="relative group">
                                 <Link
