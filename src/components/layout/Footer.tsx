@@ -24,9 +24,8 @@ export function Footer() {
                                 />
                             </div>
                         </Link>
-                        <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
-                            Professional roofing services in Frome and surrounding areas.
-                            Reliable, high-quality workmanship for all your roofing needs.
+                        <p className="text-slate-400 text-xs leading-relaxed max-w-xs">
+                            Providing expert roofing solutions with precision and care. Based in Frome, our team delivers reliable, high-quality workmanship across Bath, Shepton Mallet, Trowbridge, Warminster, and Wells. From Glastonbury to Melksham, Devizes, and Chippenham, we are your local choice for professional roofing services throughout the South West.
                         </p>
                         <div className="flex space-x-4 pt-2">
                             <a href="https://www.facebook.com/share/1DHwNNEytb/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors" aria-label="Facebook">
@@ -84,11 +83,6 @@ export function Footer() {
 
                 <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
                     <p>© {currentYear} ASJ Roofing. All rights reserved.</p>
-                    <div className="flex space-x-6 mt-4 md:mt-0">
-                        <Link href="/privacy" className="hover:text-slate-300">Privacy Policy</Link>
-                        <Link href="/terms" className="hover:text-slate-300">Terms of Service</Link>
-                        <Link href="/sitemap.xml" className="hover:text-slate-300">Sitemap</Link>
-                    </div>
                 </div>
             </Container>
         </footer>

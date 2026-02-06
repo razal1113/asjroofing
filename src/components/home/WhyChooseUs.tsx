@@ -2,6 +2,7 @@
 
 import { Container } from '@/components/ui/container'
 import { CheckCircle, Shield, Clock, Users, Trophy, ThumbsUp } from 'lucide-react'
+import { ScrollReveal } from '@/components/ui/scroll-reveal'
 import Image from 'next/image'
 
 const features = [
@@ -51,71 +52,79 @@ export default function WhyChooseUs() {
 
                     {/* Left Side - Content */}
                     <div className="lg:w-1/2 space-y-8">
-                        <div>
-                            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-                                Why Homeowners Trust <br className="hidden md:block" />
-                                <span className="text-primary">ASJ Roofing</span>
-                            </h2>
-                            <p className="text-lg text-slate-600 leading-relaxed">
-                                We understand that a roof is one of the most significant investments you'll make for your home.
-                                That's why we bring professional expertise, honest advice, and quality workmanship to every job, big or small.
-                            </p>
-                        </div>
+                        <ScrollReveal>
+                            <div>
+                                <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
+                                    Why Homeowners Trust <br className="hidden md:block" />
+                                    <span className="text-primary">ASJ Roofing</span>
+                                </h2>
+                                <p className="text-lg text-slate-600 leading-relaxed">
+                                    We understand that a roof is one of the most significant investments you'll make for your home.
+                                    That's why we bring professional expertise, honest advice, and quality workmanship to every job, big or small.
+                                </p>
+                            </div>
+                        </ScrollReveal>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            {features.map((feature) => (
-                                <div key={feature.title} className="flex gap-4">
-                                    <div className="shrink-0 mt-1">
-                                        <feature.icon className="w-6 h-6 text-primary" />
+                            {features.map((feature, index) => (
+                                <ScrollReveal key={feature.title} delay={index * 0.1} direction="right">
+                                    <div className="flex gap-4">
+                                        <div className="shrink-0 mt-1">
+                                            <feature.icon className="w-6 h-6 text-primary" />
+                                        </div>
+                                        <div>
+                                            <h3 className="font-semibold text-slate-900 mb-1">{feature.title}</h3>
+                                            <p className="text-sm text-slate-600">{feature.description}</p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h3 className="font-semibold text-slate-900 mb-1">{feature.title}</h3>
-                                        <p className="text-sm text-slate-600">{feature.description}</p>
-                                    </div>
-                                </div>
+                                </ScrollReveal>
                             ))}
                         </div>
 
                         {/* Stats Row */}
-                        <div className="pt-8 border-t border-slate-100 grid grid-cols-3 gap-8">
-                            {stats.map(stat => (
-                                <div key={stat.label}>
-                                    <p className="text-3xl font-bold text-slate-900">{stat.value}</p>
-                                    <p className="text-sm text-slate-500 font-medium uppercase tracking-wide mt-1">{stat.label}</p>
-                                </div>
-                            ))}
-                        </div>
+                        <ScrollReveal delay={0.4}>
+                            <div className="pt-8 border-t border-slate-100 grid grid-cols-3 gap-8">
+                                {stats.map(stat => (
+                                    <div key={stat.label}>
+                                        <p className="text-3xl font-bold text-slate-900">{stat.value}</p>
+                                        <p className="text-sm text-slate-500 font-medium uppercase tracking-wide mt-1">{stat.label}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </ScrollReveal>
                     </div>
 
                     {/* Right Side - Visual/Image Card */}
                     <div className="lg:w-1/2 relative">
-                        <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-900 aspect-[4/5] lg:aspect-square">
-                            {/* We can use a pattern or just a really nice gradient card if no image */}
-                            <Image
-                                src="/images/google-review-bg.png"
-                                alt="Google Reviews background"
-                                fill
-                                className="object-cover"
-                            />
-                            <div className="absolute inset-0 bg-black/40 p-12 flex flex-col justify-between">
-                                <Shield className="w-20 h-20 text-white/20" />
+                        <ScrollReveal direction="left">
+                            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-900 aspect-[4/5] lg:aspect-square">
+                                {/* We can use a pattern or just a really nice gradient card if no image */}
+                                <Image
+                                    src="/images/google-review-bg.png"
+                                    alt="Google Reviews background"
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute inset-0 bg-black/40 p-12 flex flex-col justify-between">
+                                    <Shield className="w-20 h-20 text-white/20" />
 
-                                <blockquote className="space-y-6">
-                                    <p className="text-2xl md:text-3xl font-medium text-white leading-relaxed">
-                                        "The quality of materials and attention to detail were impressive. Very professional team."
-                                    </p>
-                                    <footer className="flex items-center space-x-4">
-                                        <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white font-bold">
-                                            MP
-                                        </div>
-                                        <div>
-                                            <div className="text-white font-semibold">Mark P.</div>
-                                            <div className="text-blue-200 text-sm">Review from Google</div>
-                                        </div>
-                                    </footer>
-                                </blockquote>
+                                    <blockquote className="space-y-6">
+                                        <p className="text-2xl md:text-3xl font-medium text-white leading-relaxed">
+                                            "The quality of materials and attention to detail were impressive. Very professional team."
+                                        </p>
+                                        <footer className="flex items-center space-x-4">
+                                            <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white font-bold">
+                                                MP
+                                            </div>
+                                            <div>
+                                                <div className="text-white font-semibold">Mark P.</div>
+                                                <div className="text-blue-200 text-sm">Review from Google</div>
+                                            </div>
+                                        </footer>
+                                    </blockquote>
+                                </div>
                             </div>
-                        </div>
+                        </ScrollReveal>
 
                         {/* Decorative Element */}
                         <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-accent rounded-full opacity-20 blur-3xl" />
