@@ -68,12 +68,8 @@ export function Header() {
                                 <Link
                                     href={item.href}
                                     className={cn(
-                                        "text-sm font-medium transition-colors hover:text-primary flex items-center",
-                                        isScrolled ? "text-slate-700" : "text-slate-800" // Assuming hero is light or we need dark text? 
-                                        // Actually if hero is an image, we might need white text initially.
-                                        // But placeholder logo is blue... let's assume light background or white navbar for now if not transparent-on-dark.
-                                        // If transparent, we usually need white text. 
-                                        // Let's stick to dark text for safety unless we verify hero background.
+                                        "text-base font-semibold transition-colors hover:text-primary flex items-center",
+                                        isScrolled ? "text-slate-800" : "text-slate-900"
                                     )}
                                 >
                                     {item.name}
