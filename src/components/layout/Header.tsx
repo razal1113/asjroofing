@@ -9,19 +9,19 @@ import { Menu, X, Phone, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils/cn'
 
 const navigation = [
-    { name: 'Home', href: '/' },
+    { name: 'Home', href: '#home' },
     {
-        name: 'Services', href: '/services',
+        name: 'Services', href: '#services',
         children: [
-            { name: 'New Roofs', href: '/services/new-roofs' },
-            { name: 'Roof Repairs', href: '/services/roof-repairs' },
-            { name: 'Flat Roofing', href: '/services/flat-roofs' },
-            { name: 'Loft Conversions', href: '/services/loft-conversions' },
+            { name: 'New Roofs', href: '#services' },
+            { name: 'Roof Repairs', href: '#services' },
+            { name: 'Flat Roofing', href: '#services' },
+            { name: 'Loft Conversions', href: '#services' },
         ]
     },
-    { name: 'Locations', href: '/locations' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Contact', href: '#contact' },
 ]
 
 export function Header() {
@@ -56,7 +56,7 @@ export function Header() {
                 {isScrolled ? (
                     <nav className="flex items-center justify-between">
                         {/* Logo */}
-                        <Link href="/" className="relative z-50 shrink-0">
+                        <a href="#home" className="relative z-50 shrink-0">
                             <div className="relative h-10 w-36 md:h-11 md:w-40">
                                 <Image
                                     src={PLACEHOLDERS.LOGO}
@@ -66,7 +66,7 @@ export function Header() {
                                     priority
                                 />
                             </div>
-                        </Link>
+                        </a>
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex items-center gap-6 lg:gap-7">
@@ -124,7 +124,7 @@ export function Header() {
                     <Container>
                         <nav className="flex items-center justify-between">
                             {/* Logo */}
-                            <Link href="/" className="relative z-50 shrink-0">
+                            <a href="#home" className="relative z-50 shrink-0">
                                 <div className="relative h-10 w-40 md:h-12 md:w-48">
                                     <Image
                                         src={PLACEHOLDERS.LOGO}
@@ -134,7 +134,7 @@ export function Header() {
                                         priority
                                     />
                                 </div>
-                            </Link>
+                            </a>
 
                             {/* Desktop Navigation */}
                             <div className="hidden md:flex items-center gap-7 lg:gap-8">

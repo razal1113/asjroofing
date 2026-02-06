@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react'
 
 export default function CTASection() {
     return (
-        <section className="py-20 relative overflow-hidden bg-primary text-white">
+        <section id="contact" className="py-20 relative overflow-hidden bg-primary text-white">
             {/* Background patterns */}
             <div className="absolute top-0 right-0 p-12 opacity-10">
                 <div className="w-64 h-64 border-8 border-white rounded-full translate-x-1/2 -translate-y-1/2" />

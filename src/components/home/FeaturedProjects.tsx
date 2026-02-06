@@ -36,7 +36,7 @@ const projects = [
 
 export default function FeaturedProjects() {
     return (
-        <section className="py-20 md:py-32 bg-slate-900 text-white">
+            <section id="projects" className="py-20 md:py-32 bg-slate-900 text-white">
             <Container>
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
                     <div className="max-w-2xl">

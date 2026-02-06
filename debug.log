@@ -384,3 +384,67 @@ It can also happen if the client has a browser extension installed which messes 
                         <html lang="en" className="scroll-smooth">
                           <body
                             className="inter_5972bc34-module__OU16...
+2026-02-06T05:03:07.787Z [console][error] Uncaught Error: ./src/components/layout/Header.tsx:69:32
+Parsing ecmascript source code failed
+  67 |                                 />
+  68 |                             </div>
+> 69 |                         </Link>
+     |                                ^
+> 70 |
+     | ^
+> 71 |                         {/* Desktop Navigation */}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  72 |                         <div className="hidden md:flex items-center gap-6 lg:gap-7">
+  73 |                             {navigation.map((item) => (
+  74 |                                 <div key={item.name} className="relative group">
+
+Expected '</', got 'jsx text'
+
+Import trace:
+  Server Component:
+    ./src/components/layout/Header.tsx
+    ./src/app/layout.tsx
+
+
+2026-02-06T05:03:07.825Z [console][error] ./src/components/layout/Header.tsx:69:32
+Parsing ecmascript source code failed
+  67 |                                 />
+  68 |                             </div>
+> 69 |                         </Link>
+     |                                ^
+> 70 |
+     | ^
+> 71 |                         {/* Desktop Navigation */}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  72 |                         <div className="hidden md:flex items-center gap-6 lg:gap-7">
+  73 |                             {navigation.map((item) => (
+  74 |                                 <div key={item.name} className="relative group">
+
+Expected '</', got 'jsx text'
+
+Import trace:
+  Server Component:
+    ./src/components/layout/Header.tsx
+    ./src/app/layout.tsx
+2026-02-06T05:03:08.620Z [console][error] ./src/components/layout/Header.tsx:69:32
+Parsing ecmascript source code failed
+  67 |                                 />
+  68 |                             </div>
+> 69 |                         </Link>
+     |                                ^
+> 70 |
+     | ^
+> 71 |                         {/* Desktop Navigation */}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  72 |                         <div className="hidden md:flex items-center gap-6 lg:gap-7">
+  73 |                             {navigation.map((item) => (
+  74 |                                 <div key={item.name} className="relative group">
+
+Expected '</', got 'jsx text'
+
+Import trace:
+  Server Component:
+    ./src/components/layout/Header.tsx
+    ./src/app/layout.tsx
+2026-02-06T05:03:17.630Z [console][error] [Fast Refresh] performing full reload because your application had an unrecoverable error
+2026-02-06T05:03:40.282Z [console][error] [Fast Refresh] performing full reload because your application had an unrecoverable error

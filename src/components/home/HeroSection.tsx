@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils/cn'
 
 export default function HeroSection() {
     return (
-        <section className="relative w-full h-screen min-h-[800px] flex items-center pt-20 overflow-hidden bg-slate-900">
+        <section id="home" className="relative w-full h-screen min-h-[800px] flex items-center pt-20 overflow-hidden bg-slate-900">
 
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
