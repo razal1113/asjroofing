@@ -102,15 +102,7 @@ export function Header() {
 
                     {/* CTA Button & Mobile Toggle */}
                     <div className="flex items-center space-x-4">
-                        <div className="hidden md:block">
-                            <a href="tel:+447974100989" className={cn(
-                                "flex items-center text-sm font-bold mr-4",
-                                isScrolled ? "text-primary" : "text-primary"
-                            )}>
-                                <Phone className="h-4 w-4 mr-2" />
-                                07974 100989
-                            </a>
-                        </div>
+
                         <Link
                             href="/contact"
                             className={cn(
