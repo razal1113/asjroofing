@@ -258,3 +258,129 @@ It can also happen if the client has a browser extension installed which messes 
                               data-nimg="fill"
                               className="object-cover"
                               style={{position:"absolute",hei...
+2026-02-06T04:35:50.557Z [console][error] Image with src "/images/facebook-logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:35:50.558Z [console][error] Image with src "/images/google-logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:31.053Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <div
+                        hidden={true}
+-                       data-orchid-ref="ref-3p0hasho9k"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="scroll-smooth">
+                          <body
+                            className="inter_5972bc34-module__OU16Qa__className"
+-                           data-orchid-ref="ref-1rkefly3x9"
+                          >
+                            <Header>
+                              <header
+                                className="fixed left-0 right-0 z-50 transition-all duration-300 top-0 py-4 md:py-6"
+-                               data-orchid-ref="ref-ikzorfp0jq"
+                              >
+                                <div
+                                  className="transition-all duration-300 bg-transparent"
+                                  style={undefined}
+-                                 data-orchid-ref="ref-dgr8j6ynke"
+                                >
+                                  <Container>
+                                    <div
+                                      className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8"
+-                                     data-orchid-ref="ref-w9578xez9w"
+                                    >
+                                      <nav
+                                        className="flex items-center justify-between"
+-                                       data-orchid-ref="ref-ucaephfdom"
+                                      >
+                                        <LinkComponent href="/" className="relative z...">
+                                          <a
+                                            className="relative z-50 shrink-0"
+                                            ref={function}
+                                            onClick={function onClick}
+                                            onMouseEnter={function onMouseEnter}
+                                            onTouchStart={function onTouchStart}
+                                            href="/"
+-                                           data-orchid-ref="ref-5xrbnu3wh9"
+                                          >
+                                            <div
+                                              className="relativ... [truncated]
+2026-02-06T04:38:32.595Z [console][error] Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:32.620Z [console][error] Image with src "/images/placeholders/team/worker-generic.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:33.781Z [console][error] Image with src "/images/new-roof-installations.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:33.781Z [console][error] Image with src "/images/roof-repairs.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:33.781Z [console][error] Image with src "/images/roof-maintenance.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:33.781Z [console][error] Image with src "/images/emergency-services.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:33.781Z [console][error] Image with src "/images/google-review-bg.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:33.781Z [console][error] Image with src "/images/project-wooden-house.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:35.140Z [console][error] Image with src "/images/project-tile-roof.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:35.141Z [console][error] Image with src "/images/facebook-logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:35.142Z [console][error] Image with src "/images/google-logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:38:31.102Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <div
+                        hidden={true}
+-                       data-orchid-ref="ref-3p0hasho9k"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="scroll-smooth">
+                          <body
+                            className="inter_5972bc34-module__OU16...
