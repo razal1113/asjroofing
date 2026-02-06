@@ -19,6 +19,34 @@ export async function generateStaticParams() {
     }));
 }
 
+export async function generateMetadata({ params }: ServicePageProps): Promise<import('next').Metadata> {
+    const { slug } = await params;
+    const service = getServiceBySlug(slug);
+
+    if (!service) return {};
+
+    return {
+        title: service.title,
+        description: service.shortDescription,
+        alternates: {
+            canonical: `/services/${slug}`,
+        },
+        openGraph: {
+            title: `${service.title} | ASJ Roofing`,
+            description: service.shortDescription,
+            url: `https://asj-roofing.co.uk/services/${slug}`,
+            images: [
+                {
+                    url: service.image,
+                    width: 1200,
+                    height: 630,
+                    alt: service.title,
+                },
+            ],
+        },
+    };
+}
+
 export default async function ServicePage({ params }: ServicePageProps) {
     const { slug } = await params;
     const service = getServiceBySlug(slug);
