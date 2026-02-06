@@ -103,9 +103,12 @@ export function Header() {
                         <div className="flex items-center shrink-0">
                             <Link
                                 href="/contact"
-                                className="hidden md:inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg h-10 px-6 transition-colors"
+                                className="hidden md:inline-flex items-center gap-2 bg-black text-white text-sm font-medium pl-5 pr-1.5 py-1.5 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                             >
                                 Get Started
+                                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#2F6DF6]">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                                </span>
                             </Link>
 
                             <button
@@ -168,9 +171,12 @@ export function Header() {
                             <div className="flex items-center shrink-0">
                                 <Link
                                     href="/contact"
-                                    className="hidden md:inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl h-12 px-8 text-base transition-colors"
+                                    className="hidden md:inline-flex items-center gap-2.5 bg-black text-white text-sm font-medium pl-6 pr-1.5 py-1.5 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                                 >
                                     Get Started
+                                    <span className="flex items-center justify-center w-9 h-9 rounded-full bg-[#2F6DF6]">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                                    </span>
                                 </Link>
 
                                 <button
@@ -227,9 +233,12 @@ export function Header() {
                     <Link
                         href="/contact"
                         onClick={() => setIsOpen(false)}
-                        className="w-full flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors bg-primary text-primary-foreground hover:bg-primary/90 h-12 text-lg"
+                        className="w-full flex items-center justify-center gap-3 bg-black text-white text-lg font-medium pl-7 pr-2 py-2 rounded-full transition-all duration-200"
                     >
                         Get Started
+                        <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#2F6DF6]">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                        </span>
                     </Link>
                 </div>
             </div>
