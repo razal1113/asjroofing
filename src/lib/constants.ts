@@ -4,7 +4,7 @@ export const PLACEHOLDERS = {
     LOGO_WHITE: '/logo.png',
 
     // Hero Images
-    HERO_HOME: '/hero-house.png',
+    HERO_HOME: '/hero-home.png',
 
     // Service Images
     SERVICE_NEW_ROOF: '/images/placeholders/services/service-new-roof.jpg',
