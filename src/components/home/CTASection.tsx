@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { Container } from '@/components/ui/container'
 import { Button } from '@/components/ui/button'
-import { Phone, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export default function CTASection() {
     return (
@@ -24,13 +24,15 @@ export default function CTASection() {
                     Get a free, no-obligation quote today. Whether it's a small repair or a complete re-roof, our team is ready to help.
                 </p>
 
-                <div className="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="tel:+447974100989">
-                        <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-base font-bold bg-white text-primary hover:bg-slate-100 shadow-xl">
-                            <Phone className="mr-2 h-5 w-5" />
-                            Call 07974 100989
-                        </Button>
-                    </a>
+                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="tel:+447974100989">
+                            <button className="w-full sm:w-auto inline-flex items-center gap-3 bg-black text-white text-base font-medium pl-7 pr-2 py-2 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
+                                Call 07974 100989
+                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#2F6DF6]">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                                </span>
+                            </button>
+                        </a>
                     <Link href="/contact">
                         <Button variant="outline" size="lg" className="w-full sm:w-auto h-14 px-8 text-base border-white/40 text-white hover:bg-white/10 hover:border-white">
                             Request Online Quote

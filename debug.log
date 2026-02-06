@@ -146,3 +146,8 @@ It can also happen if the client has a browser extension installed which messes 
                         <html lang="en" className="scroll-smooth">
                           <body
                             className="inter_5972bc34-module__OU16...
+2026-02-06T03:04:33.456Z [console][error] Image with src "/images/placeholders/services/service-flat-roof.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T03:04:33.456Z [console][error] Image with src "/images/placeholders/services/service-emergency.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T03:04:44.094Z [console][error] Image with src "/images/placeholders/projects/project-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T03:04:44.194Z [console][error] Image with src "/images/placeholders/projects/project-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T03:04:47.475Z [console][error] Image with src "/images/placeholders/avatars/default-avatar.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
