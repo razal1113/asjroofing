@@ -1,7 +1,7 @@
 export const PLACEHOLDERS = {
     // Logo
-    LOGO: '/images/placeholders/logo-placeholder.png',
-    LOGO_WHITE: '/images/placeholders/logo-white-placeholder.png',
+    LOGO: '/logo.png',
+    LOGO_WHITE: '/logo.png',
 
     // Hero Images
     HERO_HOME: '/hero-house.png',
