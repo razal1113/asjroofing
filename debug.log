@@ -151,3 +151,110 @@ It can also happen if the client has a browser extension installed which messes 
 2026-02-06T03:04:44.094Z [console][error] Image with src "/images/placeholders/projects/project-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 2026-02-06T03:04:44.194Z [console][error] Image with src "/images/placeholders/projects/project-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 2026-02-06T03:04:47.475Z [console][error] Image with src "/images/placeholders/avatars/default-avatar.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:23:45.479Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+      <SegmentViewNode type="page" pagePath="page.tsx">
+        <SegmentTrieNode>
+        <Home>
+          <HeroSection>
+          <ServicesSection>
+          <WhyChooseUs>
+          <FeaturedProjects>
+          <Home>
+            <Testimonials>
+              <section className="py-20 bg-s...">
+                <Container>
+                  <div className="mx-auto w-...">
+                    <div>
+                    <div className="grid grid-...">
+                      <div className="bg-white p...">
+                        <Quote>
+                        <div>
+                        <p>
+                        <div className="flex items...">
+                          <div className="relative w...">
+                            <img
+                              alt="Lorna Paradise"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={undefined}
+                              height={undefined}
+                              decoding="async"
+                              data-nimg="fill"
+                              className="object-cover"
+                              style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                              sizes="100vw"
++                             srcSet={"/_next/image?url=%2Fimages%2Fplaceholders%2Favatars%2Fdefault-avatar.png&w=640..."}
+-                             srcSet={"/_next/image?url=%2Fimages%2Ffacebook-logo.png&w=640&q=75 640w, /_next/image?u..."}
++                             src={"/_next/image?url=%2Fimages%2Fplaceholders%2Favatars%2Fdefault-avatar.png&w=3840&q=75"}
+-                             src={"/_next/image?url=%2Fimages%2Ffacebook-logo.png&w=3840&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                          ...
+                      ...
+          ...
+      ...
+
+2026-02-06T04:23:47.168Z [console][error] Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:23:48.474Z [console][error] Image with src "/images/placeholders/projects/project-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:23:48.474Z [console][error] Image with src "/images/placeholders/projects/project-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:23:48.474Z [console][error] Image with src "/images/facebook-logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:23:48.476Z [console][error] Image with src "/images/placeholders/avatars/default-avatar.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+2026-02-06T04:23:45.489Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+      <SegmentViewNode type="page" pagePath="page.tsx">
+        <SegmentTrieNode>
+        <Home>
+          <HeroSection>
+          <ServicesSection>
+          <WhyChooseUs>
+          <FeaturedProjects>
+          <Home>
+            <Testimonials>
+              <section className="py-20 bg-s...">
+                <Container>
+                  <div className="mx-auto w-...">
+                    <div>
+                    <div className="grid grid-...">
+                      <div className="bg-white p...">
+                        <Quote>
+                        <div>
+                        <p>
+                        <div className="flex items...">
+                          <div className="relative w...">
+                            <img
+                              alt="Lorna Paradise"
+                              fetchPriority={undefined}
+                              loading="lazy"
+                              width={undefined}
+                              height={undefined}
+                              decoding="async"
+                              data-nimg="fill"
+                              className="object-cover"
+                              style={{position:"absolute",hei...
