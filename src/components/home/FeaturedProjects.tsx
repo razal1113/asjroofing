@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/ui/container'
 import { Button } from '@/components/ui/button'
-import { PLACEHOLDERS } from '@/lib/constants'
 import { ArrowRight, MapPin } from 'lucide-react'
 import { cn } from '@/lib/utils/cn'
 
@@ -14,7 +13,7 @@ const projects = [
         title: "Rosslyne Road Renovation",
         location: "Bath",
         category: "Full Reroof",
-        image: PLACEHOLDERS.PROJECT_ROSSLYNE_AFTER_1,
+        image: "/images/project-black-roof.jpg",
         size: "large" // Span 2 cols
     },
     {
@@ -22,7 +21,7 @@ const projects = [
         title: "Flat Roof Replacement",
         location: "Frome",
         category: "Flat Roof",
-        image: PLACEHOLDERS.PROJECT_GENERIC_1,
+        image: "/images/project-wooden-house.jpg",
         size: "small"
     },
     {
@@ -30,7 +29,7 @@ const projects = [
         title: "Heritage Tile Repair",
         location: "Bradford on Avon",
         category: "Repair",
-        image: PLACEHOLDERS.PROJECT_GENERIC_2,
+        image: "/images/project-tile-roof.jpg",
         size: "small"
     }
 ]
