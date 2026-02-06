@@ -101,15 +101,15 @@ export function Header() {
 
                         {/* CTA Button & Mobile Toggle */}
                         <div className="flex items-center shrink-0">
-                            <Link
-                                href="/contact"
+                            <a
+                                href="tel:+447974100989"
                                 className="hidden md:inline-flex items-center gap-2 bg-black text-white text-sm font-medium pl-5 pr-1.5 py-1.5 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                             >
-                                Get Started
+                                Call
                                 <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#2F6DF6]">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                                    <Phone className="w-4 h-4 text-white" />
                                 </span>
-                            </Link>
+                            </a>
 
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
@@ -169,15 +169,15 @@ export function Header() {
 
                             {/* CTA Button & Mobile Toggle */}
                             <div className="flex items-center shrink-0">
-                                <Link
-                                    href="/contact"
+                                <a
+                                    href="tel:+447974100989"
                                     className="hidden md:inline-flex items-center gap-2.5 bg-black text-white text-sm font-medium pl-6 pr-1.5 py-1.5 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                                 >
-                                    Get Started
+                                    Call
                                     <span className="flex items-center justify-center w-9 h-9 rounded-full bg-[#2F6DF6]">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                                        <Phone className="w-4 h-4 text-white" />
                                     </span>
-                                </Link>
+                                </a>
 
                                 <button
                                     onClick={() => setIsOpen(!isOpen)}
@@ -230,16 +230,15 @@ export function Header() {
                         <Phone className="h-5 w-5 mr-3" />
                         07974 100989
                     </a>
-                    <Link
-                        href="/contact"
-                        onClick={() => setIsOpen(false)}
+                    <a
+                        href="tel:+447974100989"
                         className="w-full flex items-center justify-center gap-3 bg-black text-white text-lg font-medium pl-7 pr-2 py-2 rounded-full transition-all duration-200"
                     >
-                        Get Started
+                        Call
                         <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#2F6DF6]">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                            <Phone className="w-5 h-5 text-white" />
                         </span>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </header>
