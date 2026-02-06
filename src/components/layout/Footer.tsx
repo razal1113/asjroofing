@@ -29,7 +29,7 @@ export function Footer() {
                             Reliable, high-quality workmanship for all your roofing needs.
                         </p>
                         <div className="flex space-x-4 pt-2">
-                            <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="Facebook">
+                            <a href="https://www.facebook.com/share/1DHwNNEytb/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors" aria-label="Facebook">
                                 <Facebook className="h-5 w-5" />
                             </a>
                             <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="Instagram">
@@ -76,7 +76,7 @@ export function Footer() {
                             </li>
                             <li className="flex items-center">
                                 <Mail className="h-5 w-5 text-primary shrink-0 mr-3" />
-                                <a href="mailto:info@asjroofing.co.uk" className="hover:text-primary transition-colors">info@asjroofing.co.uk</a>
+                                <a href="mailto:info@asj-roofing.co.uk" className="hover:text-primary transition-colors">info@asj-roofing.co.uk</a>
                             </li>
                         </ul>
                     </div>

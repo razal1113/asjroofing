@@ -1,6 +1,5 @@
 "use client"
 
-import Link from 'next/link'
 import { Container } from '@/components/ui/container'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
@@ -27,18 +26,18 @@ export default function CTASection() {
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <a href="tel:+447974100989">
                             <button className="w-full sm:w-auto inline-flex items-center gap-3 bg-black text-white text-base font-medium pl-7 pr-2 py-2 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
-                                Call 07974 100989
+                                Get in touch with us
                                 <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#2F6DF6]">
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                                 </span>
                             </button>
                         </a>
-                    <Link href="/contact">
+                    <a href="mailto:info@asj-roofing.co.uk">
                         <Button variant="outline" size="lg" className="w-full sm:w-auto h-14 px-8 text-base border-white/40 text-white hover:bg-white/10 hover:border-white">
                             Request Online Quote
                             <ArrowRight className="ml-2 h-5 w-5" />
                         </Button>
-                    </Link>
+                    </a>
                 </div>
             </Container>
         </section>
