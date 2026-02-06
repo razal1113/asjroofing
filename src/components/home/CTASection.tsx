@@ -26,10 +26,10 @@ export default function CTASection() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="tel:+447974100989">
-                            <button className="w-full sm:w-auto inline-flex items-center gap-3 bg-black text-white text-base font-medium pl-7 pr-2 py-1 sm:py-2 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
+                        <a href="tel:+447974100989" className="w-full flex justify-center">
+                            <button className="sm:w-auto flex items-center justify-center bg-black text-white text-base font-medium px-8 h-14 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer gap-6">
                                 Get in touch with us
-                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#2F6DF6]">
+                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#2F6DF6] shrink-0">
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                                 </span>
                             </button>
