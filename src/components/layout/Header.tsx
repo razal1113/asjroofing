@@ -47,7 +47,7 @@ export function Header() {
                 )}
             >
             <Container>
-                <nav className="flex items-center justify-between">
+                <nav className="flex items-center">
                     {/* Logo */}
                     <Link href="/" className="relative z-50">
                         <div className="relative h-10 w-40 md:h-12 md:w-48">
@@ -62,7 +62,7 @@ export function Header() {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center gap-10">
+                    <div className="hidden md:flex items-center gap-8 ml-10">
                         {navigation.map((item) => (
                             <div key={item.name} className="relative group">
                                 <Link
@@ -97,7 +97,7 @@ export function Header() {
                     </div>
 
                     {/* CTA Button & Mobile Toggle */}
-                    <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-4 ml-auto">
 
                         <Link
                             href="/contact"
