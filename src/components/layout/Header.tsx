@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Container } from '@/components/ui/container'
 import { PLACEHOLDERS } from '@/lib/constants'
 import { Menu, X, Phone, ChevronDown } from 'lucide-react'
+import { Logo } from '../ui/Logo'
 import { cn } from '@/lib/utils/cn'
 
 const navigation = [
@@ -33,15 +34,16 @@ export function Header() {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY
+            const delta = currentScrollY - lastScrollY
 
             // Basic scrolled state
-            setIsScrolled(currentScrollY > 20)
+            setIsScrolled(currentScrollY > 50)
 
-            // Directional scroll state (only if we've scrolled a bit)
-            if (currentScrollY > 100) {
-                if (currentScrollY < lastScrollY) {
+            // Directional scroll state with a threshold to prevent flickering
+            if (currentScrollY > 200) {
+                if (delta < -10) { // Scrolling up significantly
                     setIsScrollingUp(true)
-                } else {
+                } else if (delta > 10) { // Scrolling down significantly
                     setIsScrollingUp(false)
                 }
             } else {
@@ -60,8 +62,8 @@ export function Header() {
     return (
         <header
             className={cn(
-                "fixed left-0 right-0 z-50 transition-all duration-500",
-                isScrolled ? "top-2 md:top-4" : "top-0 py-4 md:py-6"
+                "fixed left-0 right-0 z-50 transition-all duration-500 ease-in-out",
+                isScrolled ? "top-2 md:top-3" : "top-0 py-2 md:py-3"
             )}
         >
             {/* Inner container */}
@@ -69,32 +71,33 @@ export function Header() {
                 className={cn(
                     "transition-all duration-500 ease-in-out",
                     isShowingFloatingHeader
-                        ? "mx-auto max-w-5xl bg-black shadow-2xl py-3 rounded-b-3xl px-6 lg:px-10"
+                        ? "mx-auto max-w-5xl bg-black shadow-2xl py-2 rounded-b-3xl px-6 lg:px-10"
                         : isScrolled
-                            ? "mx-auto max-w-5xl bg-white/90 backdrop-blur-md shadow-lg py-2.5 rounded-2xl px-6 lg:px-10"
-                            : "bg-transparent w-full"
+                            ? "mx-auto max-w-5xl bg-white/95 backdrop-blur-md shadow-lg py-1.5 rounded-2xl px-6 lg:px-10"
+                            : "bg-transparent w-full px-6 lg:px-12"
                 )}
                 style={isScrolled ? { marginLeft: 'max(1rem, calc(50% - 32rem))', marginRight: 'max(1rem, calc(50% - 32rem))' } : undefined}
             >
-                <nav className="flex items-center justify-between">
-                    {/* Mobile Logo Left / Desktop Logo Left */}
-                    <a href="#home" className="relative z-50 shrink-0">
-                        <div className={cn(
-                            "relative transition-all duration-500",
-                            isScrolled ? "h-9 w-32 md:h-10 md:w-36" : "h-11 w-40 md:h-14 md:w-56"
-                        )}>
-                            <Image
-                                src="/logo-new.png"
-                                alt="ASJ Roofing"
-                                fill
+                <nav className="flex items-center justify-between gap-4">
+                    {/* Logo & Phone Bundle */}
+                    <Link href="/" className="relative z-50 shrink-0 group">
+                        <div className="flex flex-col items-center">
+                            <Logo
                                 className={cn(
-                                    "object-contain object-left transition-all duration-500",
-                                    isShowingFloatingHeader && "filter invert brightness-0 invert-[1]"
+                                    "transition-all duration-500",
+                                    isScrolled ? "h-10 w-28 md:h-11 md:w-32" : "h-12 w-40 md:h-14 md:w-48"
                                 )}
-                                priority
+                                isScrolled={isScrolled}
+                                isFloating={isShowingFloatingHeader}
                             />
+                            <span className={cn(
+                                "text-[10px] md:text-xs font-bold transition-colors duration-500 -mt-1 md:-mt-1.5 opacity-80 group-hover:opacity-100",
+                                isShowingFloatingHeader ? "text-white" : "text-slate-600"
+                            )}>
+                                +44 7974 100989
+                            </span>
                         </div>
-                    </a>
+                    </Link>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-6 lg:gap-8">
@@ -130,7 +133,7 @@ export function Header() {
                         ))}
                     </div>
 
-                    {/* CTA Button & Mobile Toggle */}
+                    {/* Desktop Actions */}
                     <div className="flex items-center gap-4 shrink-0">
                         <a
                             href="tel:+447974100989"
@@ -138,10 +141,10 @@ export function Header() {
                                 "hidden md:inline-flex items-center gap-2 text-sm font-bold pl-5 pr-1.5 py-1.5 rounded-full transition-all duration-300",
                                 isShowingFloatingHeader
                                     ? "bg-white text-black hover:bg-slate-100"
-                                    : "bg-black text-white hover:shadow-lg hover:-translate-y-0.5"
+                                    : "bg-black text-white hover:scale-105"
                             )}
                         >
-                            Call Now
+                            Call Us
                             <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#2F6DF6]">
                                 <Phone className="w-4 h-4 text-white" />
                             </span>
@@ -164,7 +167,7 @@ export function Header() {
             {/* Mobile Menu Overlay */}
             <div
                 className={cn(
-                    "fixed inset-0 bg-white/98 backdrop-blur-lg z-40 md:hidden transition-all duration-500 ease-in-out pt-28 px-8",
+                    "fixed inset-0 bg-white/98 backdrop-blur-xl z-40 md:hidden transition-all duration-500 ease-in-out pt-28 px-8",
                     isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
                 )}
             >
@@ -204,7 +207,7 @@ export function Header() {
                             href="tel:+447974100989"
                             className="w-full flex items-center justify-between bg-black text-white text-xl font-bold pl-8 pr-2 h-16 rounded-full transition-all shadow-xl active:scale-95"
                         >
-                            Get in touch
+                            Contact Now
                             <span className="flex items-center justify-center w-12 h-12 rounded-full bg-[#2F6DF6]">
                                 <Phone className="w-5 h-5 text-white" />
                             </span>

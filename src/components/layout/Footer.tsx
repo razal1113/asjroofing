@@ -3,6 +3,7 @@ import { Container } from '@/components/ui/container'
 import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react'
 import { PLACEHOLDERS } from '@/lib/constants'
 import Image from 'next/image'
+import { Logo } from '@/components/ui/Logo'
 
 export function Footer() {
     const currentYear = new Date().getFullYear()
@@ -14,17 +15,18 @@ export function Footer() {
 
                     {/* Brand & Intro */}
                     <div className="space-y-4">
-                        <Link href="/" className="inline-block">
-                            <div className="relative h-12 w-48">
-                                <Image
-                                    src={PLACEHOLDERS.LOGO_WHITE}
-                                    alt="ASJ Roofing Logo"
-                                    fill
-                                    className="object-contain object-left"
+                        <Link href="/" className="inline-block group">
+                            <div className="flex flex-col items-center">
+                                <Logo
+                                    className="h-10 w-28 md:h-12 md:w-36"
+                                    isFloating={true}
                                 />
+                                <span className="text-[10px] md:text-xs font-bold text-slate-300 transition-colors duration-500 -mt-1 md:-mt-1.5 opacity-80 group-hover:opacity-100">
+                                    +44 7974 100989
+                                </span>
                             </div>
                         </Link>
-                        <p className="text-slate-400 text-xs leading-relaxed max-w-xs">
+                        <p className="text-slate-400 text-xs leading-relaxed max-w-xs text-center md:text-left">
                             Providing expert roofing solutions with precision and care. Based in Frome, our team delivers reliable, high-quality workmanship across Bath, Shepton Mallet, Trowbridge, Warminster, and Wells. From Glastonbury to Melksham, Devizes, and Chippenham, we are your local choice for professional roofing services throughout the South West.
                         </p>
                         <div className="flex space-x-4 pt-2">

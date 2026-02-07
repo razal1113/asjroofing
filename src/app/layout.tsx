@@ -45,10 +45,10 @@ export const metadata: Metadata = {
     description: 'Expert roofing services in Frome, Bath, and Somerset. New roofs, repairs, flat roofing, and loft conversions by ASJ Roofing.',
     images: [
       {
-        url: '/hero-home.png',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'ASJ Roofing Services',
+        alt: 'ASJ Roofing - Professional Roofing Experts in Frome & Somerset',
       },
     ],
   },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'ASJ Roofing | Professional Roofers in Frome & Somerset',
     description: 'Expert roofing services in Frome, Bath, and Somerset.',
-    images: ['/hero-home.png'],
+    images: ['/og-image.png'],
   },
 };
 
