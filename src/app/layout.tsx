@@ -9,11 +9,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://asj-roofing.co.uk'),
   title: {
-    default: "ASJ Roofing | Professional Roofers in Frome & Somerset",
+    default: "ASJ Roofing | Roofing & Loft Conversions",
     template: "%s | ASJ Roofing"
   },
-  description: "Expert roofing services in Frome, Bath, and Somerset. New roofs, repairs, flat roofing, and loft conversions by ASJ Roofing. Get a free quote today.",
-  keywords: ["roofing Frome", "roofers Somerset", "roof repairs Bath", "new roofs Somerset", "ASJ Roofing"],
+  description: "Professional roofing and loft conversion services across the UK. Reliable, insured, and experienced.",
+  keywords: ["roofing Frome", "roofers Somerset", "roof repairs Bath", "new roofs Somerset", "loft conversions UK", "ASJ Roofing"],
   authors: [{ name: "ASJ Roofing" }],
   creator: "ASJ Roofing",
   publisher: "ASJ Roofing",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: '/',
+    canonical: 'https://asj-roofing.co.uk',
   },
   robots: {
     index: true,
@@ -41,21 +41,21 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: 'https://asj-roofing.co.uk',
     siteName: 'ASJ Roofing',
-    title: 'ASJ Roofing | Professional Roofers in Frome & Somerset',
-    description: 'Expert roofing services in Frome, Bath, and Somerset. New roofs, repairs, flat roofing, and loft conversions by ASJ Roofing.',
+    title: 'ASJ Roofing | Roofing & Loft Conversions',
+    description: 'Professional roofing and loft conversion services across the UK. Reliable, insured, and experienced.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'ASJ Roofing - Professional Roofing Experts in Frome & Somerset',
+        alt: 'ASJ Roofing - Professional Roofing Experts',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ASJ Roofing | Professional Roofers in Frome & Somerset',
-    description: 'Expert roofing services in Frome, Bath, and Somerset.',
+    title: 'ASJ Roofing | Roofing & Loft Conversions',
+    description: 'Professional roofing and loft conversion services across the UK.',
     images: ['/og-image.png'],
   },
 };

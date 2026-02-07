@@ -11,7 +11,7 @@ import { ScrollReveal } from '@/components/ui/scroll-reveal'
 const projects = [
     {
         id: 1,
-        title: "Rosslyne Road Renovation",
+        title: "full reroof replacement / Rosslyne road",
         location: "Bath",
         category: "Full Reroof",
         image: "/images/project-black-roof.jpg",

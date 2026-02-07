@@ -1,4 +1,4 @@
-import { Home, Hammer, Building, TriangleAlert, Shield, CheckCircle, Clock, BadgeCheck } from 'lucide-react';
+import { Home, Hammer, Building, TriangleAlert, Shield, CheckCircle, Clock, BadgeCheck, Maximize } from 'lucide-react';
 
 export interface Service {
     id: string;
@@ -77,6 +77,27 @@ export const services: Service[] = [
             { title: 'Durability', description: 'Modern flat roof systems are incredibly tough and resistant to foot traffic.' },
             { title: 'Low Maintenance', description: 'Once installed, our flat roofs require very little upkeep.' },
             { title: 'Versatility', description: 'Suitable for a wide range of applications from dormers to large commercial roofs.' }
+        ]
+    },
+    {
+        id: 'loft-conversions',
+        slug: 'loft-conversions',
+        title: 'Loft Conversions',
+        shortDescription: 'Transform your attic space with expert structural roofing work. We handle everything from dormers to roof lights with architectural precision.',
+        fullDescription: 'Unlock the potential of your home with a professional loft conversion. Our team specializes in the structural roofing aspects of attic transformations, ensuring your new space is safe, weatherproof, and beautifully integrated with your existing roofline. Whether you need a simple Velux installation or a complex dormer construction, we deliver architectural precision and high-quality finishes that add significant value to your property.',
+        features: [
+            'Dormer window construction',
+            'Velux and skylight installation',
+            'Structural roof reinforcement',
+            'Insulation and ventilation upgrades',
+            'Seamless roof integration'
+        ],
+        image: '/images/services/loft-conversion.jpg',
+        icon: Maximize,
+        benefits: [
+            { title: 'Extra Space', description: 'Create a new bedroom, office, or living area without moving house.' },
+            { title: 'Property Value', description: 'Loft conversions are one of the most effective ways to increase your home’s value.' },
+            { title: 'Natural Light', description: 'Strategically placed roof lights can flood your new space with daylight.' }
         ]
     },
     {

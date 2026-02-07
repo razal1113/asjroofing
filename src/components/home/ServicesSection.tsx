@@ -1,10 +1,12 @@
 "use client"
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { Container } from '@/components/ui/container'
 import { motion } from 'framer-motion'
 import { services } from '@/lib/service-data'
 import { ScrollReveal } from '@/components/ui/scroll-reveal'
+import { ArrowRight } from 'lucide-react'
 
 export default function ServicesSection() {
     return (
@@ -21,36 +23,41 @@ export default function ServicesSection() {
                     </div>
                 </ScrollReveal>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
                     {services.map((service, index) => (
                         <ScrollReveal key={service.id} delay={index * 0.1}>
-                            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                                {/* Image Header */}
-                                <div className="h-48 relative overflow-hidden">
-                                    <Image
-                                        src={service.image}
-                                        alt={service.title}
-                                        fill
-                                        className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                    />
-                                    <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors" />
-                                    <div className="absolute top-4 right-4 bg-white/90 p-2 rounded-full shadow-sm">
-                                        <service.icon className="w-5 h-5 text-primary" />
+                            <Link href={`/services/${service.slug}`} className="block h-full">
+                                <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                                    {/* Image Header */}
+                                    <div className="h-48 relative overflow-hidden shrink-0">
+                                        <Image
+                                            src={service.image}
+                                            alt={service.title}
+                                            fill
+                                            className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                        />
+                                        <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors" />
+                                        <div className="absolute top-4 right-4 bg-white/90 p-2 rounded-full shadow-sm">
+                                            <service.icon className="w-5 h-5 text-primary" />
+                                        </div>
+                                    </div>
+
+                                    {/* Content */}
+                                    <div className="p-6 space-y-4 flex flex-col flex-grow">
+                                        <h3 className="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">
+                                            {service.title}
+                                        </h3>
+                                        <p className="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                                            {service.shortDescription}
+                                        </p>
+
+                                        <div className="pt-4 mt-auto flex items-center text-primary font-medium text-sm group-hover:gap-2 transition-all">
+                                            <span>View service</span>
+                                            <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+                                        </div>
                                     </div>
                                 </div>
-
-                                {/* Content */}
-                                <div className="p-6 space-y-4">
-                                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-slate-600 text-sm leading-relaxed line-clamp-3">
-                                        {service.shortDescription}
-                                    </p>
-
-
-                                </div>
-                            </div>
+                            </Link>
                         </ScrollReveal>
                     ))}
                 </div>

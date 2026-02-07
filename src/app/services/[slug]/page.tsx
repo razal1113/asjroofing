@@ -29,20 +29,29 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<im
         title: service.title,
         description: service.shortDescription,
         alternates: {
-            canonical: `/services/${slug}`,
+            canonical: `https://asj-roofing.co.uk/services/${slug}`,
         },
         openGraph: {
             title: `${service.title} | ASJ Roofing`,
             description: service.shortDescription,
             url: `https://asj-roofing.co.uk/services/${slug}`,
+            siteName: 'ASJ Roofing',
+            type: 'website',
+            locale: 'en_GB',
             images: [
                 {
-                    url: service.image,
+                    url: service.image, // Next.js will use metadataBase if this is relative, but we can also use absolute if preferred.
                     width: 1200,
                     height: 630,
                     alt: service.title,
                 },
             ],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: `${service.title} | ASJ Roofing`,
+            description: service.shortDescription,
+            images: [service.image],
         },
     };
 }
@@ -78,12 +87,18 @@ export default async function ServicePage({ params }: ServicePageProps) {
                         {service.shortDescription}
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-                        <Button size="lg" className="bg-primary hover:bg-blue-700 text-white min-w-[160px]">
+                        <a
+                            href="mailto:info@asj-roofing.co.uk"
+                            className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 bg-primary hover:bg-blue-700 text-white min-w-[160px]"
+                        >
                             Get a Free Quote
-                        </Button>
-                        <Button size="lg" variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 min-w-[160px]">
+                        </a>
+                        <a
+                            href="tel:+447974100989"
+                            className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 border border-input bg-white/10 border-white/20 text-white hover:bg-white/20 min-w-[160px]"
+                        >
                             <Phone className="mr-2 h-4 w-4" /> Call Now
-                        </Button>
+                        </a>
                     </div>
                 </Container>
             </section>
@@ -155,12 +170,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
                                         Speak to our friendly team today to discuss your roofing requirements.
                                     </p>
                                     <div className="flex flex-col gap-3">
-                                        <Button className="w-full bg-white text-slate-900 hover:bg-slate-100">
-                                            01234 567890
-                                        </Button>
-                                        <Button variant="outline" className="w-full border-slate-700 hover:bg-slate-800 text-white">
-                                            Contact Us
-                                        </Button>
+                                        <a
+                                            href="tel:+447974100989"
+                                            className="w-full inline-flex items-center justify-center rounded-md bg-white text-slate-900 hover:bg-slate-100 h-10 px-4 py-2 font-medium transition-colors"
+                                        >
+                                            +44 7974 100989
+                                        </a>
                                     </div>
                                 </div>
                                 {/* Decorative circle */}
