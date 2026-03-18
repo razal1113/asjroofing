@@ -88,7 +88,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
                         <a
-                            href="mailto:info@asj-roofing.co.uk"
+                            href="mailto:contact@asj-roofing.co.uk"
                             className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 bg-primary hover:bg-blue-700 text-white min-w-[160px]"
                         >
                             Get a Free Quote

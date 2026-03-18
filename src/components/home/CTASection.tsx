@@ -34,8 +34,8 @@ export default function CTASection() {
                                 </span>
                             </button>
                         </a>
-                        <a href="mailto:info@asj-roofing.co.uk" className="w-full sm:w-auto">
-                            <Button variant="outline" size="lg" className="w-full h-14 px-8 text-base border-white/40 text-white hover:bg-white/10 hover:border-white">
+                        <a href="mailto:contact@asj-roofing.co.uk" className="w-full sm:w-auto">
+                            <Button variant="ghost" size="lg" className="w-full h-14 px-8 text-base border-white/40 border text-white hover:bg-white/10 hover:border-white transition-all">
                                 Request Online Quote
                                 <ArrowRight className="ml-2 h-5 w-5" />
                             </Button>

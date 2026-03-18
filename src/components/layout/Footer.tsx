@@ -77,7 +77,7 @@ export function Footer() {
                             </li>
                             <li className="flex items-center">
                                 <Mail className="h-5 w-5 text-primary shrink-0 mr-3" />
-                                <a href="mailto:info@asj-roofing.co.uk" className="hover:text-primary transition-colors">info@asj-roofing.co.uk</a>
+                                <a href="mailto:contact@asj-roofing.co.uk" className="hover:text-primary transition-colors">contact@asj-roofing.co.uk</a>
                             </li>
                         </ul>
                     </div>
