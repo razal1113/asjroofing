@@ -7,7 +7,7 @@ import { Footer } from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://asj-roofing.co.uk'),
+  metadataBase: new URL('https://www.asj-roofing.co.uk'),
   title: {
     default: "ASJ Roofing | Roofing & Loft Conversions",
     template: "%s | ASJ Roofing"
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: 'https://asj-roofing.co.uk',
+    canonical: 'https://www.asj-roofing.co.uk',
   },
   robots: {
     index: true,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://asj-roofing.co.uk',
+    url: 'https://www.asj-roofing.co.uk',
     siteName: 'ASJ Roofing',
     title: 'ASJ Roofing | Roofing & Loft Conversions',
     description: 'Professional roofing and loft conversion services across the UK. Reliable, insured, and experienced.',

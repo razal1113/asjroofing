@@ -29,12 +29,12 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<im
         title: service.title,
         description: service.shortDescription,
         alternates: {
-            canonical: `https://asj-roofing.co.uk/services/${slug}`,
+            canonical: `https://www.asj-roofing.co.uk/services/${slug}`,
         },
         openGraph: {
             title: `${service.title} | ASJ Roofing`,
             description: service.shortDescription,
-            url: `https://asj-roofing.co.uk/services/${slug}`,
+            url: `https://www.asj-roofing.co.uk/services/${slug}`,
             siteName: 'ASJ Roofing',
             type: 'website',
             locale: 'en_GB',

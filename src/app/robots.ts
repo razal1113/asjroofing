@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/api/', '/_next/', '/static/'],
         },
-        sitemap: 'https://asj-roofing.co.uk/sitemap.xml',
+        sitemap: 'https://www.asj-roofing.co.uk/sitemap.xml',
     }
 }
