@@ -64,8 +64,9 @@ export default function FeaturedProjects() {
                                 <Image
                                     src={project.image}
                                     alt={project.title}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                    width={800}
+                                    height={600}
+                                    className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent" />
 

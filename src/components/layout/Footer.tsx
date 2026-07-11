@@ -11,7 +11,7 @@ export function Footer() {
     return (
         <footer className="bg-slate-900 text-slate-200 border-t border-slate-800">
             <Container className="py-12 md:py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
 
                     {/* Brand & Intro */}
                     <div className="space-y-4">
@@ -33,9 +33,6 @@ export function Footer() {
                             <a href="https://www.facebook.com/share/1DHwNNEytb/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors" aria-label="Facebook">
                                 <Facebook className="h-5 w-5" />
                             </a>
-                            <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="Instagram">
-                                <Instagram className="h-5 w-5" />
-                            </a>
                         </div>
                     </div>
 
@@ -44,10 +41,10 @@ export function Footer() {
                         <h3 className="text-white font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-2 text-sm">
                             <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
-                            <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
-                            <li><Link href="/services" className="hover:text-primary transition-colors">Services</Link></li>
-                            <li><Link href="/projects" className="hover:text-primary transition-colors">Our Work</Link></li>
-                            <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+                            <li><Link href="/#about" className="hover:text-primary transition-colors">About Us</Link></li>
+                            <li><Link href="/#services" className="hover:text-primary transition-colors">Services</Link></li>
+                            <li><Link href="/#projects" className="hover:text-primary transition-colors">Our Work</Link></li>
+                            <li><Link href="/#contact" className="hover:text-primary transition-colors">Contact</Link></li>
                         </ul>
                     </div>
 
@@ -83,8 +80,16 @@ export function Footer() {
                     </div>
                 </div>
 
+                <div className="mb-12">
+                    <h3 className="text-white font-semibold mb-3">Areas We Cover</h3>
+                    <p className="text-sm text-slate-400 leading-relaxed">
+                        We provide expert roofing and loft conversion services across the South West, including: Frome, Bath, Somerset, Wiltshire, Warminster, Shepton Mallet, Trowbridge, Wells, Glastonbury, Melksham, Devizes, Bradford on Avon, and Chippenham.
+                    </p>
+                </div>
+
                 <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
                     <p>© {currentYear} ASJ Roofing. All rights reserved.</p>
+                    <Link href="/privacy-policy" className="hover:text-white transition-colors mt-4 md:mt-0">Privacy Policy</Link>
                 </div>
             </Container>
         </footer>

@@ -33,8 +33,9 @@ export default function ServicesSection() {
                                         <Image
                                             src={service.image}
                                             alt={service.title}
-                                            fill
-                                            className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                            width={600}
+                                            height={400}
+                                            className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                                         />
                                         <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors" />
                                         <div className="absolute top-4 right-4 bg-white/90 p-2 rounded-full shadow-sm">

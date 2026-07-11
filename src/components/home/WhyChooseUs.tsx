@@ -102,8 +102,9 @@ export default function WhyChooseUs() {
                                 <Image
                                     src="/images/google-review-bg.png"
                                     alt="Google Reviews background"
-                                    fill
-                                    className="object-cover"
+                                    width={600}
+                                    height={800}
+                                    className="object-cover w-full h-full"
                                 />
                                 <div className="absolute inset-0 bg-black/40 p-12 flex flex-col justify-between">
                                     <Shield className="w-20 h-20 text-white/20" />

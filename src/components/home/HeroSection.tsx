@@ -17,8 +17,9 @@ export default function HeroSection() {
                 <Image
                     src={PLACEHOLDERS.HERO_HOME}
                     alt="Modern home with premium roofing by ASJ Roofing"
-                    fill
-                    className="object-cover opacity-60"
+                    width={1920}
+                    height={1080}
+                    className="object-cover w-full h-full opacity-60"
                     priority
                 />
                 {/* Gradient Overlay */}
@@ -48,30 +49,26 @@ export default function HeroSection() {
                         </motion.div>
 
                         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                            Professional Roofing Experts <br />
+                            Premium Roofing & Loft Conversions <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-500">
-                                Across Frome & Somerset
+                                in Frome, Bath & Somerset
                             </span>
                         </h1>
 
                         <p className="text-base md:text-lg text-slate-300 max-w-xl leading-relaxed">
-                            Protecting homes with quality and precision. Whether you need a new roof in Warminster or emergency repairs in Glastonbury and Wells, our team provides reliable roofing solutions across Melksham, Devizes, and the entire South West.
+                            Protecting homes with quality and precision. From emergency roof repairs in Warminster and Glastonbury, to flat roofing in Bath and loft conversions in Trowbridge, our expert team provides reliable solutions across the entire South West.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center gap-4">
-                            <a href="#services" className="w-full sm:w-auto">
-                                <button className="inline-flex items-center gap-3 bg-black text-white text-base font-medium pl-7 pr-2 py-2 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
-                                    Get Started Now
-                                    <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#2F6DF6]">
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-                                    </span>
-                                </button>
+                            <a href="#services" className="w-full sm:w-auto inline-flex items-center gap-3 bg-black text-white text-base font-medium pl-7 pr-2 py-2 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-pointer justify-center">
+                                Get Started Now
+                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#2F6DF6]">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                                </span>
                             </a>
-                            <a href="#projects" className="w-full sm:w-auto">
-                                <Button variant="outline" size="lg" className="w-full sm:w-auto text-base px-8 h-14 rounded-full border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm">
-                                    View Our Work
-                                </Button>
-                            </a>
+                            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-base px-8 h-14 rounded-full border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm">
+                                <a href="#projects">View Our Work</a>
+                            </Button>
                         </div>
 
                         {/* Social Proof */}
@@ -82,8 +79,9 @@ export default function HeroSection() {
                                         <Image
                                             src={PLACEHOLDERS.WORKER_GENERIC}
                                             alt="Happy Customer"
-                                            fill
-                                            className="object-cover"
+                                            width={40}
+                                            height={40}
+                                            className="object-cover w-full h-full"
                                         />
                                     </div>
                                 ))}
