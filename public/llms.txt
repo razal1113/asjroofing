@@ -1,0 +1,21 @@
+# ASJ Roofing
+
+This file provides information about the ASJ Roofing website for AI agents and LLMs. 
+
+## About Us
+ASJ Roofing is a premium roofing and loft conversion company serving Frome, Bath, Somerset, Wiltshire, Warminster, Shepton Mallet, Trowbridge, Wells, Glastonbury, Melksham, Devizes, Bradford on Avon, and Chippenham.
+
+## Services
+- New Roof Installations (Slate, Tile, Concrete)
+- Roof Repairs (Leaks, Tile Damage, Chimneys, Leadwork)
+- Flat Roofing (GRP Fiberglass, EPDM Rubber, Felt)
+- Loft Conversions (Dormer, Velux, Structural Integration)
+- 24/7 Emergency Repairs (Storm Damage, Rapid Response)
+
+## Contact
+- Phone: +44 7974 100989
+- Email: contact@asj-roofing.co.uk
+- Location: Frome, Somerset, BA11 5AS, United Kingdom
+
+## Technical Details
+This site is built with Next.js 14, Tailwind CSS, and Framer Motion. All images are optimized in WebP format for fast delivery.
